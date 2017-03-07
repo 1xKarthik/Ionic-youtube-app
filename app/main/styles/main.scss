@@ -1,0 +1,119 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+*/
+
+$light: #fff !default;
+$stable: #f8f8f8 !default;
+$positive: #4a87ee !default;
+$calm: #43cee6 !default;
+$balanced: #66cc33 !default;
+$energized: #f0b840 !default;
+$assertive: #ef4e3a !default;
+$royal: #8a6de9 !default;
+$dark: #444 !default;
+
+// The path for our ionicons font files, relative to the built & temporary main.css
+$ionicons-font-path: "../assets/fonts" !default;
+
+// Include all of Ionic
+@import "../../bower_components/ionic/scss/ionic";
+
+//body {
+//  .bar.bar-light {
+//    background-color: rgba(255, 255, 255, .66) !important;
+//  }
+//  .scroll-content {
+//    overflow: visible !important;
+//  }
+//}
+
+#main-nav-bar {
+  //.bar.bar-light {
+  //  background-color: rgba(255, 255, 255, .66) !important;
+  //  border-style: none !important;
+  //  border-bottom: none !important;
+  //  border-color: #fff;
+  //}
+  .bar.bar-dark {
+    border-color: #444 !important;
+    border-bottom-width: 0 !important;
+  }
+}
+
+.category-list {
+  .scroll-content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .row {
+    padding: 0;
+    .col {
+      padding: 1px;
+      a {
+        text-decoration: none;
+      }
+      .category-title {
+        text-align: center;
+        background-color: antiquewhite;
+        margin: 3px 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+
+.category-item {
+  .list .item {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    h2 {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      span {
+        color: white;
+        font: bold 24px/45px Helvetica, Sans-Serif;
+        letter-spacing: -1px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.item {
+  border-width: 0;
+}
+
+.item-view .item-image {
+  text-align: left;
+}
+
+#youtube-link {
+  //display: inline-block;
+  position: relative;
+
+  img {
+    background: rgba(255,255,255,0.5);
+  }
+
+}
+
+#youtube-link:after {
+  background: url(../assets/images/play-button3.png) center center no-repeat;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 65px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin:auto;
+}

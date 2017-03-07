@@ -1,0 +1,58 @@
+<ion-view class="item-view" view-title="Item Title">
+
+  <ion-content>
+
+    <div>
+      <!--<img class="full-image" src="main/assets/images/test.png">-->
+      <!--<div id="vrview"></div>-->
+      <!--<iframe width="100%" height="360"-->
+      <!--ng-src="{{vm.URL}}"-->
+      <!--frameborder="0" allowfullscreen crossorigin="anonymous">-->
+      <!--</iframe>-->
+      <!--<div class="padding">-->
+      <!--This is a basic Card which contains an item that has wrapping text.-->
+      <!--This is a basic Card which contains an item that has wrapping text.-->
+      <!--This is a basic Card which contains an item that has wrapping text.-->
+      <!--</div>-->
+
+      <div class="item item-image">
+        <a id="youtube-link" href="#"
+           onclick="window.open('https://www.youtube.com/watch?v=hR1mNJ11ycU', '_system', 'location=yes'); return false;">
+          <img src="{{vm.thumbnail}}">
+        </a>
+        <ion-item style="margin-top: 10px;" class="item-text-wrap padding"> {{vm.title}}</ion-item>
+        <div class="list">
+          <a class="item item-icon-left">
+            <i class="icon ion-eye"></i>
+            Views
+            <span class="badge badge-dark">{{vm.viewCount}}</span>
+          </a>
+          <a class="item item-icon-left">
+            <i class="icon ion-android-favorite"></i>
+            Likes
+            <span class="badge badge-calm">{{vm.likeCount}}</span>
+          </a>
+        </div>
+        <div class="list padding">
+          <button class="item button button-block button-positive"
+                  onclick="window.plugins.socialsharing.share(
+          ' message, subject, image and link',
+          null,null,
+          'http://www.x-services.nl')">
+            Share
+          </button>
+          <button class="item button button-block button-positive" ng-click="vm.show_desc()">
+            {{vm.description_text}}
+          </button>
+          <ion-item ng-hide="vm.hide_desc" class="item-text-wrap"
+                    ng-bind-html="vm.description"></ion-item>
+        </div>
+      </div>
+      <!--<div class="button-bar">-->
+      <!--<a class="button button-positive" style="margin-right: 5px">First</a>-->
+      <!--<a class="button button-positive">Second</a>-->
+      <!--</div>-->
+    </div>
+
+  </ion-content>
+</ion-view>

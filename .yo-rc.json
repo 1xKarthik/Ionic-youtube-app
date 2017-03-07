@@ -1,0 +1,22 @@
+{
+  "generator-m-ionic": {
+    "answers": {
+      "appName": "MaayaVR",
+      "appId": "com.maayavr.project",
+      "ionicCss": false,
+      "bowerPackages": [
+        "localforage#~1.4.0"
+      ],
+      "platforms": [
+        "ios",
+        "android",
+        "browser"
+      ],
+      "plugins": [
+        "cordova-plugin-device"
+      ],
+      "appModule": "MaayaVR",
+      "ecosystems": []
+    }
+  }
+}

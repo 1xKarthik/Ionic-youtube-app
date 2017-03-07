@@ -1,0 +1,24 @@
+<ion-view class="category-item">
+  <!-- do you want padding -->
+  <ion-header-bar align-title="center" id="main-nav-bar" class="bar-light">
+    <h1 class="title">MaayaVR</h1>
+  </ion-header-bar>
+  <ion-content class="padding">
+
+    <div class="list card" ng-repeat="items in vm.arr track by $index">
+
+      <div class="item item-image">
+        <a href="/item" ui-sref="item">
+          <!--<img src="main/assets/images/test.png">-->
+          <img src="main/assets/images/bahubali.jpg">
+          <h2>
+            <!--<span>Pretty Hate Machine <br/><small>Nine Inch Nails</small></span>-->
+            <!--<span>{{vm.title}}</span>-->
+          </h2>
+        </a>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>
